@@ -1,0 +1,14 @@
+workspace: rhtap-migration-tenant
+
+application:
+  name: appName
+  description: "appName"
+  displayName: "appName"
+
+components:
+  - name: appName
+    pacProvision: true
+    targetPort: 3000
+    git:
+      url: appUrl
+      dockerfileUrl: "./Dockerfile"
