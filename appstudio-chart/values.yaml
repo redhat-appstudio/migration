@@ -1,0 +1,21 @@
+workspace: rhtap-migration-tenant
+
+application:
+  name: hello-secret
+  description: "Hello World app for demo about Sealed Secrets"
+  displayName: "hello-secret"
+
+components:
+  - name: hello-secret
+    pacProvision: false
+    targetPort: 3000
+    git:
+      url: https://github.com/ernesgonzalez33/hello-secret
+      dockerfileUrl: "./Dockerfile"
+  # - name: component-2 # Dummy component
+  #   pacProvision: false
+  #   targetPort: 8080
+  #   git:
+  #     url: https://github.com/ernesgonzalez33/component-2
+  #     context: "test-context"
+  #     devfileUrl: "./devfile"
