@@ -194,7 +194,7 @@ func AppConfigsToCSV(nsToAppconfigMaps NsToAppConfigs) error {
 	defer w.Flush()
 
 	err = w.Write([]string{
-		"Workspace", "AppName", "ComponentName", "IntegrationTests", "ReleasePlans",
+		"Workspace", "AppName", "ComponentName", "Enabled?", "IntegrationTests", "ReleasePlans",
 	})
 
 	if err != nil {
@@ -205,10 +205,15 @@ func AppConfigsToCSV(nsToAppconfigMaps NsToAppConfigs) error {
 		for _, appConfigMap := range appConfigMaps {
 			for appName, appConfig := range appConfigMap {
 				for _, comp := range appConfig.Components {
+					isEnabled := "No"
+					if len(comp.Spec.ContainerImage) > 0 {
+						isEnabled = "Yes"
+					}
 					err := w.Write([]string{
 						ns,
 						appName,
 						comp.Name,
+						isEnabled,
 						appConfig.GetTestNames(),
 						appConfig.GetReleasePlanNames(),
 					})
