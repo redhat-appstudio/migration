@@ -19,7 +19,7 @@ metadata:
 spec:
   params:
   - name: dockerfile
-    value: Dockerfile
+    value: dashboard/Dockerfile
   - name: git-url
     value: '{{repo_url}}'
   - name: image-expires-after
@@ -27,7 +27,7 @@ spec:
   - name: output-image
     value: quay.io/redhat-user-workloads/rhtap-migration-tenant/migration-dashboard/migration-dashboard:on-pr-{{revision}}
   - name: path-context
-    value: dashboard
+    value: .
   - name: revision
     value: '{{revision}}'
   pipelineSpec:
