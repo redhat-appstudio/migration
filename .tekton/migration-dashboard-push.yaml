@@ -289,8 +289,12 @@ spec:
       params:
       - name: SNYK_SECRET
         value: $(params.snyk-secret)
+      - name: image-digest
+        value: $(tasks.build-container.results.IMAGE_DIGEST)
+      - name: image-url
+        value: $(tasks.build-container.results.IMAGE_URL)
       runAfter:
-      - clone-repository
+      - build-container
       taskRef:
         bundle: quay.io/redhat-appstudio-tekton-catalog/task-sast-snyk-check:0.1@sha256:6ec7690387f3610530bf99809f039549d2037f8a0e769c6e9db996b2d5f57552
         name: sast-snyk-check
