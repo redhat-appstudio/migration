@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/go-toolset:1.18.10-4 as builder
+FROM registry.access.redhat.com/ubi9/go-toolset:1.19.13-4 as builder
 
 COPY ./ ./
 # cache deps before building and copying source so that we don't need to re-download as much
