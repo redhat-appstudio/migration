@@ -6,7 +6,7 @@ COPY ./ ./
 RUN go mod download
 RUN go build -o bin/generator .
 
-FROM registry.access.redhat.com/ubi9-minimal:9.2-484
+FROM registry.access.redhat.com/ubi9-minimal:9.7-1776833838
 
 COPY --from=builder /opt/app-root/src/bin/generator /
 ENTRYPOINT [ "/generator" ]
