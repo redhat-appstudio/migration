@@ -1,6 +1,6 @@
 module github.com/redhat-appstudio/migration/dashboard
 
-go 1.18
+go 1.22
 
 require (
 	github.com/redhat-appstudio/application-api v0.0.0-20230526095918-1ccc9aa0e75a
@@ -45,6 +45,7 @@ require (
 	github.com/prometheus/common v0.39.0 // indirect
 	github.com/prometheus/procfs v0.9.0 // indirect
 	github.com/spf13/pflag v1.0.6-0.20210604193023-d5e0c0615ace // indirect
+	go.yaml.in/yaml/v2 v2.4.2 // indirect
 	golang.org/x/net v0.7.0 // indirect
 	golang.org/x/oauth2 v0.5.0 // indirect
 	golang.org/x/sys v0.5.0 // indirect
@@ -64,5 +65,5 @@ require (
 	k8s.io/utils v0.0.0-20230115233650-391b47cb4029 // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
-	sigs.k8s.io/yaml v1.3.0 // indirect
+	sigs.k8s.io/yaml v1.6.0 // indirect
 )
