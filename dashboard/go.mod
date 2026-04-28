@@ -1,12 +1,12 @@
 module github.com/redhat-appstudio/migration/dashboard
 
-go 1.18
+go 1.25.0
 
 require (
 	github.com/redhat-appstudio/application-api v0.0.0-20230526095918-1ccc9aa0e75a
 	github.com/redhat-appstudio/integration-service v0.0.0-20230529192451-328a8b8db397
 	github.com/redhat-appstudio/release-service v0.0.0-20230511145849-bde1cdcbb60b
-	golang.org/x/sync v0.1.0
+	golang.org/x/sync v0.20.0
 	k8s.io/api v0.26.1
 	k8s.io/apimachinery v0.26.3
 	k8s.io/client-go v0.26.1
@@ -49,7 +49,7 @@ require (
 	golang.org/x/oauth2 v0.5.0 // indirect
 	golang.org/x/sys v0.5.0 // indirect
 	golang.org/x/term v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
+	golang.org/x/text v0.36.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	gomodules.xyz/jsonpatch/v2 v2.2.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
