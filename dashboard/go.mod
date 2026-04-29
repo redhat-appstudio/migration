@@ -1,6 +1,6 @@
 module github.com/redhat-appstudio/migration/dashboard
 
-go 1.18
+go 1.23
 
 require (
 	github.com/redhat-appstudio/application-api v0.0.0-20230526095918-1ccc9aa0e75a
