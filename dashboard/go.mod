@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/redhat-appstudio/application-api v0.0.0-20230526095918-1ccc9aa0e75a
-	github.com/redhat-appstudio/integration-service v0.0.0-20230529192451-328a8b8db397
+	github.com/redhat-appstudio/integration-service f492931b3aee
 	github.com/redhat-appstudio/release-service v0.0.0-20230511145849-bde1cdcbb60b
 	golang.org/x/sync v0.1.0
 	k8s.io/api v0.26.1
